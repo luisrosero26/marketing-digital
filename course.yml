@@ -4,29 +4,40 @@ chunks:
   - flow_id: flow9
     next_flow: quiz12
     pages:
-    - {flow_id: page23, title: Aspectos clave}
-    - {flow_id: page24, title: Sitios web y objetivos de negocio}
-    - {flow_id: page25, title: El funcionamiento de los buscadores}
-    - {flow_id: page26, title: Google Search Console}
+    - flow_id: page23
+      title: Aspectos clave
+    - flow_id: page24
+      title: Sitios web y objetivos de negocio
+    - flow_id: page25
+      title: El funcionamiento de los buscadores
+    - flow_id: page26
+      title: Google Search Console
     title: Haz que la publicidad de display te ayude a alcanzar tus objetivos
     title_next_flow: Comprueba tu conocimiento
   - flow_id: flow10
     next_flow: quiz13
     pages:
-    - {flow_id: page27, title: Tus objetivos online}
-    - {flow_id: page28, title: Desarrollo de una presencia online}
-    - {flow_id: page29, title: "An\xE1lisis y adaptaci\xF3n"}
-    - {flow_id: page30, title: "La presencia online que t\xFA quieres"}
+    - flow_id: page27
+      title: Tus objetivos online
+    - flow_id: page28
+      title: Desarrollo de una presencia online
+    - flow_id: page29
+      title: "An\xE1lisis y adaptaci\xF3n"
+    - flow_id: page30
+      title: "La presencia online que t\xFA quieres"
     title: "\xBFEn qu\xE9 consisten las redes publicitarias?"
     title_next_flow: Comprueba tu conocimiento
   - flow_id: flow11
     next_flow: null
     pages:
-    - {flow_id: page31, title: "Introducci\xF3n a la optimizaci\xF3n para buscadores\
-        \ (SEO)"}
-    - {flow_id: page32, title: La importancia de contar con una estrategia de SEO}
-    - {flow_id: page33, title: El proceso de SEO}
-    - {flow_id: page34, title: "Elecci\xF3n de objetivos de SEO realistas"}
+    - flow_id: page31
+      title: "Introducci\xF3n a la optimizaci\xF3n para buscadores (SEO)"
+    - flow_id: page32
+      title: La importancia de contar con una estrategia de SEO
+    - flow_id: page33
+      title: El proceso de SEO
+    - flow_id: page34
+      title: "Elecci\xF3n de objetivos de SEO realistas"
     title: "C\xF3mo funciona el retargeting"
     title_next_flow: ''
   id: welcome
