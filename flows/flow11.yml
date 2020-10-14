@@ -99,7 +99,7 @@ pages:
     \ a atraer a visitantes a tu negocio, convertirlos en clientes y hacer que regresen\
     \ de manera regular.</p></div>"
   id: intro
-  title: INICIO
+  title: Inicio
   type: Page
 - content: "<div style=\"color: rgb(10, 10, 10); font-family: Arial, Tahoma, Helvetica,\
     \ FreeSans, sans-serif; font-size: 16px; background-color: rgb(243, 243, 243);\
@@ -932,11 +932,7 @@ pages:
   type: Page
 rules:
   access:
-  - if_has_role:
-    - ta
-    - student
-    - instructor
-    permissions:
-    - view
+  - if_has_role: [ta, student, instructor]
+    permissions: [view]
   grade_identifier: null
 title: "C\xF3mo funciona el retargeting"
