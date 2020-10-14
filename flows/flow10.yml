@@ -101,7 +101,7 @@ pages:
     n la informaci\xF3n necesaria para que sepas c\xF3mo est\xE1 yendo tu campa\xF1\
     a.</p>"
   id: intro
-  title: INICIO
+  title: Inicio
   type: Page
 - content: "<p><span style=\"color: rgb(10, 10, 10); font-family: Arial, Tahoma, Helvetica,\
     \ FreeSans, sans-serif; font-size: 16px; text-align: justify; background-color:\
@@ -778,11 +778,7 @@ pages:
   type: Page
 rules:
   access:
-  - if_has_role:
-    - ta
-    - student
-    - instructor
-    permissions:
-    - view
+  - if_has_role: [ta, student, instructor]
+    permissions: [view]
   grade_identifier: null
 title: "\xBFEn qu\xE9 consisten las redes publicitarias?"
