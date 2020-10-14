@@ -932,7 +932,11 @@ pages:
   type: Page
 rules:
   access:
-  - if_has_role: [ta, student, instructor]
-    permissions: [view]
+  - if_has_role:
+    - ta
+    - student
+    - instructor
+    permissions:
+    - view
   grade_identifier: null
 title: "C\xF3mo funciona el retargeting"
