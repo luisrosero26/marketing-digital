@@ -22,7 +22,7 @@ pages:
 - content: |-
     <p><br></p><p><iframe frameborder="0" src="//www.youtube.com/embed/juCqja1Fv3U" width="640" height="360" class="note-video-clip"></iframe><br></p>
   id: intro
-  title: INICIO
+  title: Inicio
   type: Page
 - content: "<div style=\"color: rgb(10, 10, 10); font-family: Arial, Tahoma, Helvetica,\
     \ FreeSans, sans-serif; font-size: 16px; background-color: rgb(243, 243, 243);\
@@ -601,11 +601,7 @@ pages:
   type: Page
 rules:
   access:
-  - if_has_role:
-    - ta
-    - student
-    - instructor
-    permissions:
-    - view
+  - if_has_role: [ta, student, instructor]
+    permissions: [view]
   grade_identifier: null
 title: Haz que la publicidad de display te ayude a alcanzar tus objetivos
