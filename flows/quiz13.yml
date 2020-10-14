@@ -24,12 +24,15 @@ groups:
     type: Page
 - id: quiz_start
   pages:
-  - choices: ["El anuncio segmentado por palabras clave ser\xE1 el \xFAnico que aparezca\
-        \ en el bloque de anuncios.", "El anuncio segmentado por palabras clave aparecer\xE1\
-        \ encima del anuncio segmentado por emplazamiento.", "~CORRECT~ El anuncio\
-        \ segmentado por emplazamiento ser\xE1 el \xFAnico que aparezca en el bloque\
-        \ de anuncios.", "El anuncio segmentado por emplazamiento aparecer\xE1 encima\
-        \ del anuncio segmentado por palabras clave."]
+  - choices:
+    - "El anuncio segmentado por palabras clave ser\xE1 el \xFAnico que aparezca en\
+      \ el bloque de anuncios."
+    - "El anuncio segmentado por palabras clave aparecer\xE1 encima del anuncio segmentado\
+      \ por emplazamiento."
+    - "~CORRECT~ El anuncio segmentado por emplazamiento ser\xE1 el \xFAnico que aparezca\
+      \ en el bloque de anuncios."
+    - "El anuncio segmentado por emplazamiento aparecer\xE1 encima del anuncio segmentado\
+      \ por palabras clave."
     id: quizquestion18
     prompt: ''
     title: "Al competir por el mismo bloque de anuncios, si el ranking de un anuncio\
@@ -38,8 +41,11 @@ groups:
       \ palabras clave, entonces:"
     type: ChoiceQuestion
     value: 20.0
-  - choices: ["Coste por conversi\xF3n", ~CORRECT~ Clics e impresiones, ~CORRECT~
-        Cobertura y frecuencia, Porcentaje de conversiones]
+  - choices:
+    - "Coste por conversi\xF3n"
+    - ~CORRECT~ Clics e impresiones
+    - ~CORRECT~ Cobertura y frecuencia
+    - Porcentaje de conversiones
     credit_mode: exact
     id: quizquestion19
     prompt: ''
@@ -48,28 +54,33 @@ groups:
       tricas clave de un buen rendimiento?"
     type: MultipleChoiceQuestion
     value: 20.0
-  - choices: ["A\xF1aden el testimonio de un cliente.", "~CORRECT~ A\xF1aden informaci\xF3\
-        n adicional, como una ubicaci\xF3n o un n\xFAmero de tel\xE9fono.", "Muestran\
-        \ el anuncio en la mitad inferior de la p\xE1gina.", "Ampl\xEDan la longitud\
-        \ del emplazamiento del anuncio."]
+  - choices:
+    - "A\xF1aden el testimonio de un cliente."
+    - "~CORRECT~ A\xF1aden informaci\xF3n adicional, como una ubicaci\xF3n o un n\xFA\
+      mero de tel\xE9fono."
+    - "Muestran el anuncio en la mitad inferior de la p\xE1gina."
+    - "Ampl\xEDan la longitud del emplazamiento del anuncio."
     id: quizquestion20
     prompt: ''
     title: "\xBFC\xF3mo funcionan las extensiones en los anuncios de display?"
     type: ChoiceQuestion
     value: 20.0
-  - choices: ["Las cuentas que utilizan euros como moneda de facturaci\xF3n", "Las\
-        \ campa\xF1as orientadas a sitios web de partners de b\xFAsqueda", "~CORRECT~\
-        \ Las campa\xF1as orientadas a la Red de Display", "Las cuentas que utilizan\
-        \ la facturaci\xF3n mediante prepago"]
+  - choices:
+    - "Las cuentas que utilizan euros como moneda de facturaci\xF3n"
+    - "Las campa\xF1as orientadas a sitios web de partners de b\xFAsqueda"
+    - "~CORRECT~ Las campa\xF1as orientadas a la Red de Display"
+    - "Las cuentas que utilizan la facturaci\xF3n mediante prepago"
     id: quizquestion21
     prompt: ''
     title: "Las pujas de coste por cada mil impresiones (CPM) solo est\xE1n disponibles\
       \ en:"
     type: ChoiceQuestion
     value: 20.0
-  - choices: ["En la Red de B\xFAsqueda y en la Red de Display", "~CORRECT~ Solo en\
-        \ la Red de B\xFAsqueda", ~CORRECT~ Solo en la Red de Display, "En la Red\
-        \ de B\xFAsqueda y en YouTube"]
+  - choices:
+    - "En la Red de B\xFAsqueda y en la Red de Display"
+    - "~CORRECT~ Solo en la Red de B\xFAsqueda"
+    - ~CORRECT~ Solo en la Red de Display
+    - "En la Red de B\xFAsqueda y en YouTube"
     id: quizquestion22
     prompt: ''
     title: "\xBFD\xF3nde puedes colocar anuncios de imagen y de v\xEDdeo de un cliente?"
@@ -78,16 +89,25 @@ groups:
   shuffle: false
 rules:
   access:
-  - permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+  - permissions:
+    - view
+    - submit_answer
+    - end_session
+    - see_correctness
+    - see_answer_after_submission
   grade_aggregation_strategy: use_latest
   grade_identifier: quiz13
   grading:
-  - {credit_percent: 100}
+  - credit_percent: 100
   start:
   - if_before: 2020-12-30 22:10:23+00:00
     if_has_fewer_sessions_than: 1
-    if_has_role: [student, ta, instructor]
+    if_has_role:
+    - student
+    - ta
+    - instructor
     may_list_existing_sessions: true
     may_start_new_session: true
-  - {may_list_existing_sessions: true, may_start_new_session: false}
+  - may_list_existing_sessions: true
+    may_start_new_session: false
 title: "\xBFEn qu\xE9 consisten las redes publicitarias?"
